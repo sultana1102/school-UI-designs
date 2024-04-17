@@ -1,0 +1,113 @@
+body
+{
+    background-color: rgb(231, 204, 213);
+    padding: 20px;
+}
+main {
+    width: 1200px;
+    height: auto;
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 10px;
+    background-color:rgb(205, 245, 227) ;
+    outline: 3px solid rgb(15, 91, 87);
+}
+
+input[type="date"],[type="text"], [type="email"],[type="number"], select, textarea
+{
+    margin-left: 5px;
+    border: none;
+    border-bottom: 1px dotted #000;
+    outline: none;
+    background-color: transparent;
+    text-align: center;
+
+}
+
+.row {
+    margin-top: 20px;
+}
+
+
+
+label {
+    font-weight: bold;
+    
+}
+
+
+
+
+#img {
+position: relative;
+top: 30px;
+display: block;
+width: 150px; 
+height: 150px; 
+margin: 0 auto;
+border: 2px solid black;
+}
+
+#parent_img {
+position: relative;
+display: block;
+width:100px; 
+height: 80px; 
+margin: 0 auto;
+border: 2px solid black;
+}
+#documents
+{
+position: relative;
+display: block;
+width:70%; 
+margin-top: 10px;
+border: 2px solid black;
+}
+
+
+.filestyle {
+display: none; 
+}
+.file-upload-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+}
+#parent_img .file-upload-icon
+{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+}
+h5
+{
+height: 30px;
+line-height: 30px;
+background-color: whitesmoke;
+border: 1px solid black;
+margin: 30px 0;
+padding-left: 10px;
+text-align: center;
+box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.sibling
+{
+     width: 600px;
+   min-height: 350px;
+    border-top: 40px solid black;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:rgb(205, 245, 227) ;
+    outline: 3px solid rgb(15, 91, 87);
+}
+button
+{
+height: auto;
+width: auto;
+float: right;
+}

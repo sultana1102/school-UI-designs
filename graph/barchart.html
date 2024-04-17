@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    
+</script>
+<body>
+
+<canvas id="myChart" style="max-width:600px; height: 300px;"></canvas>
+<canvas id="horizontalBar" style="width:100%;max-width:600px"></canvas>
+
+<script>
+var ctx = document.getElementById("myChart").getContext("2d");
+
+var data = {
+  labels: ["Enquiery", "Admission"],
+  datasets: [{
+    label: "Blue",
+    backgroundColor: "blue",
+    data: [8, 2]
+  }, 
+  
+  {
+    label: "orange",
+    backgroundColor: "orange",
+    data: [4, 3]
+  },
+   {
+    label: "lightblue",
+    backgroundColor: "lightblue",
+    data: [6, 7]
+  },
+   {
+    label: "lightGreen",
+    backgroundColor: "lightgreen",
+    data: [7, 2]
+  },
+   {
+    label: "vilote",
+    backgroundColor: "vilote",
+    data: [9, 5]
+  },
+    {
+    label: "pink",
+    backgroundColor: "pink",
+    data: [5, 3]
+  }]
+};
+
+var myBarChart = new Chart(ctx, {
+  type: 'bar',
+  data: data,
+  options: {
+    barValueSpacing: 20,
+    scales: {
+      yAxes: [{
+        ticks: {
+           beginAtZero: true, // Start at 0
+      stepSize: 5, // Set the step size to 5,
+      max: 35,
+        }
+      }]
+    }
+  }
+});
+
+
+var xValues = ["Vishal", "Menaakshi", "Sakshi", "Ashmita", "Uksha"];
+var yValues = [35, 49, 24, 54, 15];
+var barColors = "blue";
+
+new Chart("horizontalBar", {
+  type: "horizontalBar",
+  data: {
+  labels: xValues,
+  datasets: [{
+    backgroundColor: barColors,
+    data: yValues
+  }]
+},
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "World Wine Production 2018"
+    },
+    scales: {
+      xAxes: [{ticks: {min: 10, max:60}}]
+    }
+  }
+});
+</script>
+
+<!-- <main style="height: 400px; width: 600px;">
+    Effort Report
+    <hr>
+    Vishal <div class="first" style="display: inline; height: 30px; wi"></div>
+</main> -->
+
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="style.css" rel="stylesheet">
+    <title>Admission</title>
+    </head>
+<body>
+    <main>
+        <!--Admission Date-->
+        <label for="admission_date" style="margin-top: 10px;">Admission Date:</label>
+        <input type="date" id="admission_date" name="admission_date" class="no-border-input">
+        
+        <div class="row">
+
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-1">
+                <label for="name">Name:</label>
+                    </div>
+                <div class="col-md-4">
+                <input type="text" id="First" placeholder="First Name">
+                </div>
+                <div class="col-md-4">
+                <input type="text" id="Middle" placeholder="Middle Name"> 
+                </div>
+                <div class="col-md-3">
+                <input type="text" id="Last" placeholder="Last Name"> </div>
+            </div><!--name-->
+
+            <div class="row">
+                <div class="col-md-1">
+                    <label for="name">Admission No:</label>
+                </div>
+                <div class="col-md-3">
+                    <input type="number" id="admission_no" placeholder="admission No"> 
+                </div><!--Admission no-->
+
+                <div class="col-md-1">
+                    <label for="name">Roll No:</label>
+                </div>
+                <div class="col-md-3">
+                    <input type="number" id="roll_no" placeholder="Roll No"> 
+                </div><!--roll no-->
+
+                <div class="col-md-1">
+                    <label for="dob">D.O.B:</label>
+                </div>
+                <div class="col-md-3">
+                    <input type="date" id="dob"> 
+                </div>
+            </div><!--dob-->
+
+            <div class="row">
+                <div class="col-md-1">
+                    <label for="name">Class:</label>
+                </div>
+                <div class="col-md-3">
+                    <select>
+                        <option value="" id="class">Select Class</option>
+                    </select>
+                </div><!--class-->
+
+                <div class="col-md-1">
+                    <label for="name">Section:</label>
+                </div>
+                <div class="col-md-3">
+                    <select>
+                        <option value="" id="section">Select Section </option>
+                    </select>
+                </div><!--section-->
+
+                <div class="col-md-1">
+                    <label for="House">House:</label>
+                </div>
+                <div class="col-md-3">
+                    <select>
+                        <option value="" id="house">Select House </option>
+                    </select>
+                </div>
+            </div><!--house-->
+
+      </div>
+            
+            <!--Student Image-->
+            <div class="col-md-2">
+               
+                <label for="file" id="img">
+                    <i class="fas fa-image file-upload-icon  fa-6x"></i><span style="margin-left: 15px;"> Student Image </span> 
+                </label>
+                <input class="filestyle form-control" type='file' name='file' id="file" size='20' />
+            </div> 
+        </div>  <!--end first half-->
+
+<hr style="border: 2px solid rgb(228, 140, 140);">
+
+        <div class="row">
+            <div class="col-md-1">
+                <label for="name">Phone NO:</label>
+            </div>
+            <div class="col-md-3">
+                <input type="number" id="Mobile" placeholder="Number"> 
+            </div><!--phone no-->
+    
+            <div class="col-md-1">
+                <label for="name">Email:</label>
+            </div>
+            <div class="col-md-3">
+                <input type="email" id="mail" placeholder="Email-ID"> 
+            </div><!--mail-->
+    
+            <div class="col-md-1">
+                <label for="name">Blood Group:</label>
+            </div>
+            <div class="col-md-3">
+                <select>
+                    <option value="" id="blood_group">Select Blood Group </option>
+                </select>
+            </div><!--blood group-->
+
+    </div><!--end row-->
+
+           <div class="row">
+           
+    
+            <div class="col-md-1">
+                <label for="gender">Gender:</label>
+            </div>
+            <div class="col-md-3">
+    
+                <select>
+                    <option value="" id="gender">Select Gender </option>
+                </select>
+            </div><!--gender-->
+
+            <div class="col-md-1">
+                <label for="height">Height:</label>
+            </div>
+            <div class="col-md-3">
+    
+                <input type="number" id="height"> 
+            </div><!--height-->
+    
+            <div class="col-md-1">
+                <label for="weight">Weight:</label>
+            </div>
+            <div class="col-md-3">
+    
+                <input type="number" id="weight"> 
+            </div><!--weight-->
+            
+    </div><!--end row-->
+
+
+    <div class="row">
+        <div class="col-md-1">
+            <label for="name">Category:</label>
+        </div>
+        <div class="col-md-3">
+            <select>
+                <option value="" id="Category">Select Category</option>
+            </select>
+        </div><!--category-->
+
+        <div class="col-md-1">
+            <label for="name">Religion:</label>
+        </div>
+        <div class="col-md-3">
+
+            <input type="text" id="Religion"> 
+        </div><!--religion-->
+
+        <div class="col-md-4">
+            <label for="name">Cast:</label>
+            <input type="text" id="Cast"> 
+        </div><!--cast-->
+
+    </div><!--end row-->
+
+       <div class="row">
+        <div class="col-4">
+            <label for="">As On Date</label>
+            <input type="date" id="">
+        </div>
+
+        <!--button for adding sibling details-->
+            <button id="" class="btn btn-link"><i class="fas fa-plus"></i> Add Siblings</button>
+
+    </div><!--end row-->
+
+
+       <h5> Parent Guardian Detail</h5>
+
+       <div class="row">
+        <div class="col-md-1">
+            <label for="father_name">Father's Name</label>
+        </div>
+        <div class="col-md-2">
+            <input type="text" placeholder="father's name">
+        </div><!--father name-->
+
+        <div class="col-md-1">
+            <label for="father_phone">Phone</label>
+        </div>
+        <div class="col-md-2">
+            <input type="number" placeholder="father's phone no">
+        </div><!--father phone -->
+
+        <div class="col-md-1">
+            <label for="">Occupation</label>
+        </div>
+        <div class="col-md-2">
+            <input type="text" placeholder="father's occupation">
+        </div><!--father occupation-->
+
+        <!--Father's Photo-->
+        <div class="col-md-3">
+            <label for="file" id="parent_img">
+                <i class="fas fa-image file-upload-icon" style="font-size: 1em"></i>
+                <span style=" margin-left: 10px; font-size: 11px;"> <b>select Image </b></span>
+            </label>
+            <input class="filestyle form-control" type='file' name='file' id="file" size='20' />
+        </div> 
+       </div><!--end father detail-->
+
+       <div class="row">
+        <div class="col-md-1">
+            <label for="mother_name">Mother's Name</label>
+        </div>
+        <div class="col-md-2">
+            <input type="text" placeholder="mother's Name">
+        </div><!--mother name-->
+
+        <div class="col-md-1">
+            <label for="mother_phone">Phone</label>
+        </div>
+        <div class="col-md-2">
+            <input type="number" placeholder=" mother's phone No.">
+        </div><!--mother phone-->
+
+        <div class="col-md-1">
+            <label for="">Occupation</label>
+        </div>
+        <div class="col-md-2">
+            <input type="text" placeholder="mother's occupation">
+        </div><!--end-->
+
+        <!--Mother's photo-->
+        <div class="col-md-3">
+            <label for="file" id="parent_img">
+                <i class="fas fa-image file-upload-icon" style="font-size: 1em"></i>
+                <span style="margin-left: 10px; font-size: 11px;"> <b>select Image</b> </span>
+            </label>
+            <input class="filestyle form-control" type='file' name='file' id="file" size='20' />
+        </div> 
+ </div><!--end mother detail-->
+
+       <div class="row">
+        <div class="col-md-3">
+            <label for=""> Guardian Occupation</label>
+        </div>
+        <div class="col-md-0">
+            <input type="text">
+        </div><!--end-->
+
+        <!--guardian's photo-->
+        <div class="col-md-2">
+            <label for="file" id="parent_img">
+                <i class="fas fa-image file-upload-icon" style="font-size: 1em"></i>
+                <span style="margin-left: 10px; font-size: 11px;"><b> select Image </b></span>
+            </label>
+            <input class="filestyle form-control" type='file' name='file' id="file" size='20' />
+        </div>
+       </div><!--end row-->
+
+       <button id="" class="btn btn-dark-black" style="margin-top: 25px;"><i class="fas fa-plus fa-sm"></i></button>
+
+       <h5> Add More Details</h5>
+
+       <div class="row">
+        <div class="col-12">
+       <button id="" class="btn btn-success">Save</button>
+    </div>
+</div>
+    </main>
+    
+</body>
+</html>

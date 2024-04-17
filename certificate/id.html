@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <title>Document</title>
+    <style>
+        /* body {
+			background-color: #d7d6d3;
+			font-family:'verdana';
+		} */
+		.id-card-holder {
+			width: 400px;
+            height: 540px;
+		    padding: 4px;
+		    margin: 0 auto;
+		    background-color: #1f1f1f;
+		    border-radius: 5px;
+		    position: relative;
+		}
+		.id-card-holder:after {
+		    content: '';
+		    width: 7px;
+		    display: block;
+		    background-color: #0a0a0a;
+		    height: 100px;
+		    position: absolute;
+		    top: 180px;
+		    border-radius: 0 5px 5px 0;
+		}
+		.id-card-holder:before {
+		    content: '';
+		    width: 7px;
+		    display: block;
+		    background-color: #0a0a0a;
+		    height: 100px;
+		    position: absolute;
+		    top: 180px;
+		    left: 391px;
+		    border-radius: 5px 0 0 5px;
+		}
+		.id-card
+         {
+            background-color: rgb(247, 247, 220);
+            background-image: url(./1.jpg);
+            background-size: contain;
+            background-repeat: no-repeat; 
+           background-position:center;
+			padding: 5px;
+			border-radius: 10px;
+			text-align: center;
+			box-shadow: 0 0 1.5px 0px #b9b9b9;
+		}
+		.id-card img {
+			margin: 0 auto;
+		}
+		.header img {
+			width: auto;
+            height: 100px;
+            background-color: black;
+            box-shadow: 0 0 20px 0px #b9b9b9;
+            float: left;
+		}
+		.photo img {
+			width: 140px;
+            height: auto;
+    		margin-top: 10px;
+            border: 2px solid darkmagenta;
+            border-radius: 10px;
+		}
+		h2 {
+			font-size: 15px;
+			margin: 5px 0;
+            color:rgb(103, 13, 13);
+            font-weight: bold;
+		}
+		p {
+			font-size: 11px;
+            font-weight: bold;
+			margin: 1px;
+            color:rgb(82, 6, 6);
+		}
+		.id-card-hook {
+			background-color: #000;
+		    width: 70px;
+		    margin: 0 auto;
+		    height: 15px;
+		    border-radius: 5px 5px 0 0;
+		}
+		.id-card-hook:after {
+			content: '';
+		    background-color: #d7d6d3;
+		    width: 47px;
+		    height: 6px;
+		    display: block;
+		    margin: 0px auto;
+		    position: relative;
+		    top: 6px;
+		    border-radius: 4px;
+		}
+		.id-card-tag-strip {
+			width: 35px;
+		    height: 40px;
+		    background-color: #0950ef;
+		    margin: 0 auto;
+		    border-radius: 5px;
+		    position: relative;
+		    top: 9px;
+		    z-index: 1;
+		    border: 1px solid #0041ad;
+		}
+		.id-card-tag-strip:after {
+			content: '';
+		    display: block;
+		    width: 100%;
+		    height: 1px;
+		    background-color: #c1c1c1;
+		    position: relative;
+		    top: 1px;
+		}
+		.id-card-tag {
+			width: 0;
+			height: 0;
+			border-left: 100px solid transparent;
+			border-right: 100px solid transparent;
+			border-top: 100px solid #0958db;
+			margin: -10px auto -30px auto;
+		}
+		.id-card-tag:after {
+			content: '';
+		    display: block;
+		    width: 0;
+		    height: 0;
+		    border-left: 50px solid transparent;
+		    border-right: 50px solid transparent;
+		    border-top: 100px solid #d7d6d3;
+		    margin: -10px auto -30px auto;
+		    position: relative;
+		    top: -130px;
+		    left: -50px;
+		}
+        .heading
+        {
+            text-align: right;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .value
+        {
+            text-align: left;
+            font-size: 14px;
+        }
+        main
+        {
+            background-color:rgb(247, 247, 220,0.6);
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="id-card-tag"></div>
+	<div class="id-card-tag-strip"></div>
+	<div class="id-card-hook"></div>
+	<div class="id-card-holder">
+		<div class="id-card">
+            <main>
+			<div class="header" style="background-color:rgb(235, 169, 169); height: 100px;" >
+				<img src="dpslogo.png">
+                <h2 style="font-size: 22px; margin-top: 2px; color:navy;">Jyoti Niketan Educational World</h2>
+                <p>110 Kings Street,CA Phone:456542110</p>
+                <p>Email:Mount@gmail.com</p>
+			</div>
+			<div class="photo">
+				<img src="no_image.png">
+			</div>
+			<h2><b>STUDENT NAME</b></h2>
+            
+			<hr style="background-color:brown;">
+			
+            <div class="info row" style="margin-top:-10px ;">
+                <div class="heading col-md-6">Admission No:</div>
+                <div class="value col-6">4657732</div>
+            
+                <div class=" heading col-md-6">Class/Sec:</div>
+                <div class="value col-6" style="text-align: left; font-size: 14px;">10th-A(2021-22)</div>
+           
+                <div class="heading col-md-6">Father's Name:</div>
+                <div class="value col-6"> S.F. Name </div>
+            
+                <div class="heading col-md-6">Address:</div>
+                <div class="value col-6">D.No.1 Street Name Address Line 2 </div>
+           
+                <div class="heading col-md-6">Phone:</div>
+                <div class="value col-6">8937343841 </div>
+            
+                <div class="heading col-md-6">D.O.B:</div>
+                <div class="value col-6">03.11.2023 </div>
+            
+                <div class="heading col-md-6">Blood Group:</div>
+                <div class="value col-6">B+ </div>
+            </div>
+
+            <div class="row" style=" width: 360px; margin: 10px;background-color:rgb(235, 169, 169); ">
+                <div class="col-md-12" style="border: 1px solid black; padding: 5px;">Signature</div>
+            </div>
+            </main>
+		</div>
+	</div>
+</body>
+</html>
+
